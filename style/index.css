@@ -1,6 +1,59 @@
 body {
   background-color: #ce9f77;
+  grid-column-gap: 200px;
+  grid-row-gap: 200px;
+  padding: 0px 4vw;
 }
+a {
+  text-decoration: none;
+  display: contents;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* animations */
+/* for the arrow */
+/* to access the second section */
+/* section >:nth-last-child(2) {
+  background: lightgreen;
+} */
+.vectors-wrapper-3 {
+}
+/* for the text */
+.text-3 {
+}
+/* for the a that contains them */
+.link {
+}
+
+/* code i got  */
+/* 3 .link1 {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+3:after {
+  content: "\2192";
+  position: relative;
+  display: inline-block;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+  transition: margin 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+3 .link2:before {
+  width: 100%;
+  z-index: -1;
+}
+3 .link2:after {
+  margin-left: 15px;
+  transform: rotate(0deg);
+} */
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -432,7 +485,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 10px 40px;
+  /* padding: 10px 40px; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -927,7 +980,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 106px 88px;
+  /* padding: 106px 88px; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1012,7 +1065,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 38px 40px;
+  /* padding: 38px 40px; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1233,7 +1286,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 66px 25px;
+  /* padding: 66px 25px; */
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -1410,7 +1463,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 40px 48px;
+  /* padding: 40px 48px; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2286,21 +2339,21 @@ body {
 
 @font-face {
   font-family: "Arefruqaa";
-  src: url("../fonts/ArefRuqaa-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/ArefRuqaa-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Areminiscentsmile";
-  src: url("../fonts/areminiscentsmile-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/areminiscentsmile-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Crucial";
-  src: url("../fonts/Crucial-Medium.otf") format("opentype");
+  src: url("../assets/fonts/Crucial-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
