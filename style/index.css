@@ -3,6 +3,7 @@ body {
   grid-column-gap: 200px;
   grid-row-gap: 200px;
   padding: 0px 4vw;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -13,46 +14,37 @@ html {
   scroll-behavior: smooth;
 }
 /* animations */
-/* for the arrow */
-/* to access the second section */
-/* section >:nth-last-child(2) {
-  background: lightgreen;
-} */
-.vectors-wrapper-3 {
+/* btn hover animation */
+img {
+  transition: transform 0.3s ease-in-out;
 }
-/* for the text */
-.text-3 {
+.link:hover .vectors-wrapper-3 {
+  transform: rotate(45deg);
 }
-/* for the a that contains them */
-.link {
+a:hover img {
+  transform: rotate(45deg);
+  transform: scale(1.5);
+}
+a:hover {
+  transform: scale(1.1);
+}
+a {
+  transition: transform 0.3s ease-in-out;
+}
+/* with complicated structure */
+.link-2 {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-/* code i got  */
-/* 3 .link1 {
-  content: "";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transition: width 0.3s ease-in-out;
+.vectors-wrapper-3 {
+  transition: transform 0.3s ease-in-out;
 }
-3:after {
-  content: "\2192";
-  position: relative;
-  display: inline-block;
-  margin-left: 5px;
-  transform: rotate(-45deg);
-  transition: margin 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
+.link-2:hover .vectors-wrapper-3 {
+  transform: rotate(45deg);
 }
-3 .link2:before {
-  width: 100%;
-  z-index: -1;
-}
-3 .link2:after {
-  margin-left: 15px;
-  transform: rotate(0deg);
-} */
 
 .w-layout-grid {
   display: -ms-grid;
