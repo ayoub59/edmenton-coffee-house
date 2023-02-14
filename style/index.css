@@ -45,6 +45,201 @@ a {
 .link-2:hover .vectors-wrapper-3 {
   transform: rotate(45deg);
 }
+/* link animation */
+.link-animation {
+  box-shadow: inset 0 0 0 0 #3e241d;
+  color: #3e241d;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.link-animation:hover {
+  color: #ce9f77;
+  box-shadow: inset 200px 0 0 0 #3e241d;
+}
+
+/* Presentational styles */
+.link-animation {
+  color: #3e241d;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* nav anmation */
+.nav-menu {
+  background-color: #99612f;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* padding: 4vw; */
+  /* z-index: 1; */
+}
+
+.hamb {
+  text-decoration: none;
+  color: black;
+  font-size: 3em;
+  margin-left: 1rem;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+}
+.hamb.open {
+  color: white;
+}
+
+.psst {
+  display: inline-block;
+  font-size: 2em;
+  font-family: "Shadows Into Light", helvetica, sans-serif;
+  text-align: center;
+  margin-left: 5rem;
+  line-height: 2.5;
+}
+
+.nav {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: #000;
+  top: 0;
+  left: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  color: #fff;
+}
+.left h1 {
+  text-align: center;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 6vw;
+  line-height: 1.1;
+}
+.left p {
+  text-align: center;
+  font-family: Areminiscentsmile, sans-serif;
+  color: #250601;
+  font-size: 4vw;
+  font-weight: 400;
+}
+.left small {
+  opacity: 0;
+  text-align: center;
+  color: #e6e6e6;
+  font-size: 1em;
+  display: block;
+}
+
+.right {
+  float: right;
+}
+
+.right-inner {
+  float: left;
+  height: 100%;
+  width: 0%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-inner li {
+  list-style-type: none;
+  opacity: 0;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0.5rem 0;
+}
+.right-inner li:first-child {
+  margin-top: 5rem;
+}
+.right-inner hr {
+  width: 2rem;
+  height: 0.25rem;
+  border: 0;
+  background: black;
+}
+.right-inner .fake-search {
+  height: 2.5rem;
+  width: 11rem;
+  background: #000;
+  margin: 1rem auto;
+  cursor: text;
+  font-size: 0.35em;
+  font-family: helvetica, sans-serif;
+  color: gray;
+  line-height: 2.5rem;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.right-inner .social {
+  color: #fff;
+}
+.right-inner i {
+  margin: 0.25rem 0.35rem;
+  cursor: pointer;
+}
+.right-inner i:hover {
+  color: #fff;
+}
+.right-inner .nav-foot a {
+  margin: 0 1rem;
+  color: gray;
+  transition: 0.25s;
+  font-size: 0.5em;
+}
+.right-inner .nav-foot a:hover {
+  color: #fff;
+  transition: 0.25s;
+}
+
+@media (max-width: 48rem) {
+  .left,
+  .right {
+    display: block;
+    float: none;
+    height: 50%;
+    width: 100%;
+  }
+
+  .right {
+    height: auto;
+  }
+}
+
+.nav-menu-links {
+  font-family: Crucial, sans-serif;
+  color: #250601;
+  font-size: 9vw !important;
+  font-weight: 500;
+  letter-spacing: 0em;
+}
 
 .w-layout-grid {
   display: -ms-grid;

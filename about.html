@@ -6,17 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.1.0/velocity.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script src="./js/index.js"></script>
   </head>
   <body class="body-2">
+    <nav class="nav-menu" style="height: 0%; width: 0%" role="navigation">
+      <div class="left">
+        <a href="#" class="hamb">
+          <img
+            src="./assets/svgs/burger-menu.svg"
+            loading="lazy"
+            alt=""
+            class="vectors-wrapper-2 fa fa-bars"
+          />
+        </a>
+        <h1 class="text">Edmenton Coffee house</h1>
+        <p class="nav-menu-p">comme sip with us !!</p>
+      </div>
+      <div class="right">
+        <ul class="right-inner">
+          <a href="./index.html"
+            ><div class="link-button-m link-animation nav-menu-links">
+              Home
+            </div></a
+          >
+          <a href="/menu.html"
+            ><div class="link-button-m link-animation nav-menu-links">
+              menu
+            </div></a
+          >
+          <a href="/about.html"
+            ><div class="link-button-m link-animation nav-menu-links">
+              About
+            </div></a
+          >
+          <a href="/contact.html"
+            ><div class="link-button-m link-animation nav-menu-links">
+              Contact
+            </div></a
+          >
+        </ul>
+      </div>
+    </nav>
+
     <div class="w-layout-grid navgrid">
-      <div
-        id="w-node-ab744fb3-8d1e-98ea-f35f-8b621c407569-1c407567"
-        class="navlinks"
-      >
-        <a href="./index.html"><div class="link-button-m">Home</div></a>
-        <a href="/menu.html"><div class="link-button-m">menu</div></a>
-        <a href="/about.html"><div class="link-button-m">About</div></a>
-        <a href="/contact.html"><div class="link-button-m">Contact</div></a>
+      <div class="navlinks">
+        <a href="./index.html"
+          ><div class="link-button-m link-animation">Home</div></a
+        >
+        <a href="/menu.html"
+          ><div class="link-button-m link-animation">menu</div></a
+        >
+        <a href="/about.html"
+          ><div class="link-button-m link-animation">About</div></a
+        >
+        <a href="/contact.html"
+          ><div class="link-button-m link-animation">Contact</div></a
+        >
       </div>
       <img
         src="./assets/svgs/logo.svg"
@@ -24,17 +81,22 @@
         alt="Edmenton Coffee House logo"
         class="image-4"
       />
-      <div
-        id="w-node-ab744fb3-8d1e-98ea-f35f-8b621c407572-1c407567"
-        class="navphonnum"
-      >
-        <div class="link-button-m">+212 6 37 35 59 02</div>
-        <img
+      <div class="navphonnum">
+        <div class="link-button-m link-animation">+212 6 37 35 59 02</div>
+        <a href="#" class="hamb">
+          <img
+            src="./assets/svgs/burger-menu.svg"
+            loading="lazy"
+            alt=""
+            class="vectors-wrapper-2 fa fa-bars"
+          />
+        </a>
+        <!-- <img
           src="./assets/svgs/burger-menu.svg"
           loading="lazy"
           alt=""
           class="vectors-wrapper-2"
-        />
+        /> -->
       </div>
     </div>
     <div class="menu-container contact-hero-contain">
@@ -162,28 +224,43 @@
         </div>
         <div class="footer-links-container">
           <div class="links">
-            <a href="./index.html"><div class="link-button-s">Home</div></a>
-            <a href="./about.html"><div class="link-button-s">About</div></a>
-            <a href="./gallery.html"><div class="link-button-s">Galley</div></a>
-            <a href="./menu.html"><div class="link-button-s">Menu</div></a>
-            <a href="./contact.html"
-              ><div class="link-button-s">Contact</div></a
+            <a href="#"><div class="link-button-s link-animation">Home</div></a>
+            <a href="#About"
+              ><div class="link-button-s link-animation">About</div></a
+            >
+            <a href="#Galley"
+              ><div class="link-button-s link-animation">Galley</div></a
+            >
+            <a href="#Menu"
+              ><div class="link-button-s link-animation">Menu</div></a
+            >
+            <a href="#Contact"
+              ><div class="link-button-s link-animation">Contact</div></a
+            >
+            <a href="#FAQ"
+              ><div class="link-button-s link-animation">FAQ</div></a
             >
           </div>
           <div class="links">
             <a
               target="_blank"
               href="https://www.facebook.com/profile.php?id=100063497052807"
-              ><div class="link-button-s">Facebook</div></a
+              ><div class="link-button-s link-animation">Facebook</div></a
             >
             <a
               target="_blank"
               href="https://www.instagram.com/edmonton_coffee_house/"
-              ><div class="link-button-s">Instagram</div></a
+              ><div class="link-button-s link-animation">Instagram</div></a
             >
-            <a href=""><div class="link-button-s">Twitter</div></a>
-            <a href=""><div class="link-button-s">Linkedin</div></a>
-            <a href=""><div class="link-button-s">Pinterest</div></a>
+            <a href=""
+              ><div class="link-button-s link-animation">Twitter</div></a
+            >
+            <a href=""
+              ><div class="link-button-s link-animation">Linkedin</div></a
+            >
+            <a href=""
+              ><div class="link-button-s link-animation">Pinterest</div></a
+            >
           </div>
         </div>
         <div class="pharagraf">
