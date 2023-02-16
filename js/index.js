@@ -93,46 +93,50 @@ $(document).ready(function () {
 
 // cursor animation
 const cursor = document.querySelector('.cursor');
-
 document.addEventListener('mousemove', (e) => {
-    // cursor.style.display = "flex";
-    // console.log(cursor.style.display)
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;");
 })
+// Listen for mouseout and mouseover events on the document
+document.addEventListener('mouseout', (event) => {
+    // Check if the mouse is outside the document
+    if (event.clientY <= 0 || event.clientX <= 0 || (event.clientX >= window.innerWidth || event.clientY >= window.innerHeight)) {
+        cursor.style.display = 'none';
+    }
+});
 
 
 // menu text animation
-const name = document.querySelector(".name"),
-    country = document.querySelector(".country"),
-    personImg = document.querySelector(".person-img"),
-    countryImg = document.querySelector(".country-img");
+const item1 = document.querySelector(".item1"),
+    item2 = document.querySelector(".item2"),
+    item1Img = document.querySelector(".item1-img"),
+    item2Img = document.querySelector(".item2-img");
 
-window.addEventListener("mousemove", (e) => {
+document.addEventListener("mousemove", (e) => {
     let x = e.offsetX,
         y = e.offsetY;
 
-    if (e.target.classList.contains("name")) {
-        personImg.style.left = `${x}px`;
-        personImg.style.top = `${y}px`;
+    if (e.target.classList.contains("item1")) {
+        item1Img.style.left = `${x}px`;
+        item1Img.style.top = `${y}px`;
     }
-    if (e.target.classList.contains("country")) {
-        countryImg.style.left = `${x}px`;
-        countryImg.style.top = `${y}px`;
+    if (e.target.classList.contains("item2")) {
+        item2Img.style.left = `${x}px`;
+        item2Img.style.top = `${y}px`;
     }
 });
 
-name.addEventListener("mouseover", () => {
-    personImg.style.display = "block";
+item1.addEventListener("mouseover", () => {
+    item1Img.style.display = "block";
 });
 
-name.addEventListener("mouseleave", () => {
-    personImg.style.display = "";
+item1.addEventListener("mouseleave", () => {
+    item1Img.style.display = "";
 });
 
-country.addEventListener("mouseover", () => {
-    countryImg.style.display = "block";
+item2.addEventListener("mouseover", () => {
+    item2Img.style.display = "block";
 });
 
-country.addEventListener("mouseleave", () => {
-    countryImg.style.display = "";
+item2.addEventListener("mouseleave", () => {
+    item2Img.style.display = "";
 });

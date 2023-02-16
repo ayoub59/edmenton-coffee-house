@@ -274,6 +274,16 @@ a {
 }
 /* menu animation */
 
+.menu img {
+  position: relative;
+  width: 300px;
+  transform: translate(100%, -150%);
+  display: none;
+  pointer-events: none;
+  z-index: 10000;
+  filter: grayscale(1);
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -880,6 +890,8 @@ a {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   opacity: 1;
+  /*  */
+  position: relative;
 }
 
 .dich-name {
@@ -2155,6 +2167,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  /* dor the menu hover effect */
+  .menu img {
+    transform: translate(60%, -280%);
+  }
   .navlinks {
     display: none;
     grid-column-gap: 2vw;
