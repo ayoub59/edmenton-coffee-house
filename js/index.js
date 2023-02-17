@@ -140,3 +140,28 @@ item2.addEventListener("mouseover", () => {
 item2.addEventListener("mouseleave", () => {
     item2Img.style.display = "";
 });
+
+// faq section
+const buttons = document.querySelectorAll(".faq-toggle");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () =>
+        button.parentElement.classList.toggle("active")
+    );
+});
+
+// char gpt
+// Get all the question items
+const questionItems = document.querySelectorAll('.question-item');
+
+// Add a click event listener to each question item
+questionItems.forEach(item => {
+    const question = item.querySelector('.faq-questions');
+    const answer = item.querySelector('.faq-answer');
+
+    question.addEventListener('click', () => {
+        // Toggle the visibility of the answer
+        answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+        answer.classList.toggle("show");
+    });
+});

@@ -81,8 +81,6 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  /* padding: 4vw; */
-  /* z-index: 1; */
 }
 
 .hamb {
@@ -246,8 +244,6 @@ a {
 .cursor {
   width: 1vw;
   height: 1vw;
-  /* border: 2px solid #250601; */
-  /* color: #303030; */
   border-radius: 50%;
   background-color: #250601;
   position: absolute;
@@ -256,7 +252,6 @@ a {
   animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
   z-index: 1000;
-  /* display: none; */
 }
 .cursor::after {
   content: "";
@@ -273,7 +268,6 @@ a {
   cursor: none;
 }
 /* menu animation */
-
 .menu img {
   position: relative;
   width: 300px;
@@ -282,6 +276,36 @@ a {
   pointer-events: none;
   z-index: 10000;
   filter: grayscale(1);
+}
+/* faq section */
+.faq-answer {
+  display: none;
+  transition: transform 0.3s ease-in-out;
+}
+.faq-answer {
+  opacity: 0;
+}
+
+.faq-answer.show {
+  opacity: 1;
+}
+
+.rotate-icon {
+  animation: rotate 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.mines {
+  width: 3vw;
+  height: 1vw;
 }
 
 .w-layout-grid {
@@ -1591,7 +1615,7 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -1599,6 +1623,7 @@ a {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   opacity: 1;
+  flex-direction: column;
 }
 
 .vectors-wrapper-5 {
@@ -1929,6 +1954,10 @@ a {
   color: #3e241d;
   font-size: 3vw;
   line-height: 100%;
+  display: flex;
+  cursor: pointer;
+  gap: 2vw;
+  /* transition: transform 10s ease-in-out; */
 }
 
 .locationphoneemail {
@@ -2167,7 +2196,7 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  /* dor the menu hover effect */
+  /* for the menu hover effect */
   .menu img {
     transform: translate(60%, -280%);
   }
