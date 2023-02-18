@@ -11,6 +11,10 @@ a {
   display: contents;
   color: inherit;
 }
+.options div.active .menu-options {
+  color: #3e241d;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -2039,6 +2043,7 @@ a {
   font-weight: 400;
   letter-spacing: 0em;
   mix-blend-mode: normal;
+  cursor: pointer;
 }
 
 .vectors-wrapper-8 {

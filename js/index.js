@@ -146,7 +146,7 @@ const buttons = document.querySelectorAll(".faq-toggle");
 
 buttons.forEach((button) => {
     button.addEventListener("click", () =>
-        button.parentElement.classList.toggle("active")
+        button.parentElement.classList.toggle("selected")
     );
 });
 
@@ -165,3 +165,53 @@ questionItems.forEach(item => {
         answer.classList.toggle("show");
     });
 });
+
+// menu items select 
+// const options = document.querySelectorAll('.options div');
+// const menuItems = document.querySelectorAll('.menu-items-container .item');
+// const menuText = document.querySelectorAll("menu-options")
+
+// // Add a click event listener to each option
+// function toggleMenu(menuClass) {
+//     // get all menu items
+//     const menuItems = document.querySelectorAll('.item');
+
+//     // loop through all menu items
+//     menuItems.forEach(item => {
+//         // if menu item has the menuClass, show it, otherwise hide it
+//         if (item.classList.contains(menuClass)) {
+//             item.style.display = 'block';
+//         } else {
+//             item.style.display = 'none';
+//         }
+//     });
+// }
+const options = document.querySelectorAll('.options div');
+const menuItems = document.querySelectorAll('.menu-items-container .item');
+const menuText = document.querySelectorAll("menu-options")
+
+// Add a click event listener to each option
+function toggleMenu(menuClass, option) {
+    // get all options
+    const options = document.querySelectorAll('.options div');
+    // loop through all options
+    options.forEach(opt => {
+        // remove active class from all options
+        opt.classList.remove('active');
+    });
+    // add active class to the selected option
+    option.classList.add('active');
+
+    // get all menu items
+    const menuItems = document.querySelectorAll('.item');
+
+    // loop through all menu items
+    menuItems.forEach(item => {
+        // if menu item has the menuClass, show it, otherwise hide it
+        if (item.classList.contains(menuClass)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
