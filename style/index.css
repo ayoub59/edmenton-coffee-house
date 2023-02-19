@@ -346,6 +346,11 @@ a {
   background-color: #ce9f77;
   opacity: 1;
 }
+.menu-all-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vw;
+}
 
 .navcontainer {
   display: -webkit-box;
@@ -2103,7 +2108,10 @@ a {
   grid-row-gap: 0px;
   font-family: Areminiscentsmile, sans-serif;
 }
-
+.item {
+  width: 50% !important;
+  height: 100% !important;
+}
 .contact-hero-text {
   display: -webkit-box;
   display: -webkit-flex;

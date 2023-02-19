@@ -13,6 +13,8 @@
       integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/x-icon" href="./assets/svgs/favicon.svg" />
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.1.0/velocity.min.js"></script>
@@ -116,141 +118,619 @@
       />
     </div>
     <!-- chat gpt -->
-    <div class="options">
-      <div class="hot-drinks" onclick="toggleMenu('hot-drinks', this)">
-        <div class="menu-options">Hot drinks</div>
+    <div class="menu-all-container">
+      <div class="options">
+        <div class="hot-drinks" onclick="toggleMenu('hot-drinks', this)">
+          <div class="menu-options">Hot drinks</div>
+        </div>
+        <div class="hot-drinks" onclick="toggleMenu('cold-drinks', this)">
+          <div class="menu-options">Cold drinks</div>
+        </div>
+        <div class="hot-drinks" onclick="toggleMenu('breakfast', this)">
+          <div class="menu-options">Breakfast</div>
+        </div>
+        <div class="hot-drinks" onclick="toggleMenu('cakes', this)">
+          <div class="menu-options">Cakes</div>
+        </div>
       </div>
-      <div class="hot-drinks" onclick="toggleMenu('cold-drinks', this)">
-        <div class="menu-options">Cold drinks</div>
-      </div>
-      <div class="hot-drinks" onclick="toggleMenu('breakfast', this)">
-        <div class="menu-options">Breakfast</div>
-      </div>
-      <div class="hot-drinks" onclick="toggleMenu('cakes', this)">
-        <div class="menu-options">Cakes</div>
+      <div class="menu-items-container" id="menu-items-container">
+        <div class="item hot-drinks" style="display: none">
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">black Caffee</div>
+              <div class="menu-item">12 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">creamy coffee</div>
+              <div class="menu-item">13 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Cappuccino</div>
+              <div class="menu-item">16 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Double Expresso</div>
+              <div class="menu-item">18 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Nespresso</div>
+              <div class="menu-item">16 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">tea à la Menthe</div>
+              <div class="menu-item">12 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Verneire</div>
+              <div class="menu-item">12 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">black tea</div>
+              <div class="menu-item">15 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">infusion</div>
+              <div class="menu-item">15 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">milk (hot / cold)</div>
+              <div class="menu-item">12 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">lait Verneire</div>
+              <div class="menu-item">14 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">hot choclat</div>
+              <div class="menu-item">14 DH$</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/01.png"
+              loading="lazy"
+              alt=""
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">choclat Fondu</div>
+              <div class="menu-item">18 DH$</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item cold-drinks" style="display: none">
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus d'orange ou citron</div>
+              <div class="menu-item">16 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus d'orange ou citron</div>
+              <div class="menu-item">16 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus d'orange ou citron</div>
+              <div class="menu-item">16 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus Carotte/banane/pomme</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus d'avocat/fruise/mangue/ananas</div>
+              <div class="menu-item">24 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus d'avocat aux fruit secs</div>
+              <div class="menu-item">26 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jus Edmenton</div>
+              <div class="menu-item">28 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Soda</div>
+              <div class="menu-item">13 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Orangina 50cl</div>
+              <div class="menu-item">15 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Oulmés</div>
+              <div class="menu-item">12 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Red Bull</div>
+              <div class="menu-item">28 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Eau minérale 50cl</div>
+              <div class="menu-item">9 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">virgin Mojito</div>
+              <div class="menu-item">22 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Mangue ou Fraise Mojito</div>
+              <div class="menu-item">28 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Blubery Mojito</div>
+              <div class="menu-item">28 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Boost Mojito</div>
+              <div class="menu-item">45 DH</div>
+            </div>
+          </div>
+        </div>
+        <div class="item breakfast" style="display: none">
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Continental Breakfast</div>
+              <div class="menu-item">30 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Jasper Breakfast</div>
+              <div class="menu-item">36 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Dutch Breakfast</div>
+              <div class="menu-item">40 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Fassi Breakfast</div>
+              <div class="menu-item">45 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Mexican Breakfast</div>
+              <div class="menu-item">45 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Edmonton Brunch</div>
+              <div class="menu-item">58 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Atfal Breakfast</div>
+              <div class="menu-item">28 DH</div>
+            </div>
+          </div>
+        </div>
+        <div class="item cakes" style="display: none">
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Nutella</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Nutella et Banane</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Nutella et Amendes</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Miet et fruits secs</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Edmonton</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Crépe Nutella</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Crépe Nutella et banane</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Crépe Nutella et Amendes</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Crépe Nutella Miel et fruits secs</div>
+              <div class="menu-item">25 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Pancake Nutella</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Pancake Nutella et banane</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Pancake Nutella et Amendes</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Pancake Nutella et fruits secs</div>
+              <div class="menu-item">23 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Pancake Edmenton</div>
+              <div class="menu-item">25 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Nutella</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+          <div class="item-container">
+            <img
+              src="./assets/image/menu-page/02.png"
+              loading="lazy"
+              class="menu-item-image"
+            />
+            <div class="name-price">
+              <div class="menu-item">Gaufre Nutella</div>
+              <div class="menu-item">18 DH</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="menu-items-container" id="menu-items-container">
-      <div class="item hot-drinks">
-        <img
-          src="./assets/image/menu-page/01.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item cold-drinks">
-        <img
-          src="./assets/image/menu-page/02.png"
-          loading="lazy"
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item breakfast">
-        <img
-          src="./assets/image/menu-page/03.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item cakes">
-        <img
-          src="./assets/image/menu-page/04.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <style>
-      .options div.active .menu-options {
-        color: red;
-      }
-    </style> -->
-
-    <!-- old code -->
-    <!-- <div class="options">
-      <div class="hot-drinks" id="Hot-drink">
-        <div class="menu-options">Hot drinks</div>
-      </div>
-      <div class="hot-drinks" id="cold-drink">
-        <div class="menu-options">Cold drinks</div>
-      </div>
-      <div class="hot-drinks" id="Breakfastk">
-        <div class="menu-options">Breakfast</div>
-      </div>
-      <div class="hot-drinks" id="cakes">
-        <div class="menu-options">cakes</div>
-      </div>
-    </div>
-    <div class="menu-items-container">
-      <div class="item">
-        <img
-          src="./assets/image/menu-page/01.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item">
-        <img
-          src="./assets/image/menu-page/02.png"
-          loading="lazy"
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item">
-        <img
-          src="./assets/image/menu-page/03.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-      <div class="item">
-        <img
-          src="./assets/image/menu-page/04.png"
-          loading="lazy"
-          alt=""
-          class="menu-item-image"
-        />
-        <div class="name-price">
-          <div class="menu-item">Americanao</div>
-          <div class="menu-item">$$</div>
-        </div>
-      </div>
-    </div> -->
     <div class="footer">
       <div class="our-contact">Our Conatct</div>
       <div class="content">
