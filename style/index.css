@@ -131,18 +131,21 @@ a {
   color: #fff;
 }
 .left h1 {
-  text-align: center;
   opacity: 0;
   text-transform: uppercase;
   font-size: 6vw;
   line-height: 1.1;
+  padding: 0px 4vw;
 }
 .left p {
-  text-align: center;
   font-family: Areminiscentsmile, sans-serif;
   color: #250601;
   font-size: 4vw;
   font-weight: 400;
+  padding: 0px 4vw;
+}
+.fa-bars {
+  padding: 0px 4vw !important;
 }
 .left small {
   opacity: 0;
@@ -264,6 +267,7 @@ a {
   left: -8px;
   animation: cursorAnim2 0.5s infinite alternate;
 }
+
 * {
   cursor: none;
 }
@@ -2204,6 +2208,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .cursor {
+    display: none;
+  }
   /* for the menu hover effect */
   .menu img {
     transform: translate(60%, -280%);
@@ -2221,6 +2228,7 @@ a {
   .navphonnum {
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
+    grid-column-start: 3;
   }
 
   .vectors-wrapper-2 {
