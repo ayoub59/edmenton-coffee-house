@@ -2211,6 +2211,16 @@ a {
   .cursor {
     display: none;
   }
+  /* for the nav */
+  .left h1 {
+    font-size: 10vw;
+  }
+  .left p {
+    font-size: 6vw;
+  }
+  .navgrid {
+    padding: 0;
+  }
   /* for the menu hover effect */
   .menu img {
     transform: translate(60%, -280%);
@@ -2228,7 +2238,8 @@ a {
   .navphonnum {
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
-    grid-column-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 
   .vectors-wrapper-2 {
