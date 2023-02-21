@@ -215,3 +215,14 @@ function toggleMenu(menuClass, option) {
         }
     });
 }
+// image chnage position on mouse hover
+const images = document.querySelectorAll('.image-event');
+
+document.addEventListener('mousemove', function (event) {
+    images.forEach(function (image) {
+        const x = event.clientX / window.innerWidth;
+        const y = event.clientY / window.innerHeight;
+
+        image.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
+    });
+});
