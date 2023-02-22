@@ -268,9 +268,9 @@ a {
   animation: cursorAnim2 0.5s infinite alternate;
 }
 
-* {
+/* * {
   cursor: none;
-}
+} */
 /* menu animation */
 .menu img {
   position: relative;
