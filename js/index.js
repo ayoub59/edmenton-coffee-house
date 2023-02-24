@@ -109,7 +109,20 @@ document.addEventListener('mouseout', (event) => {
 const item1 = document.querySelector(".item1"),
     item2 = document.querySelector(".item2"),
     item1Img = document.querySelector(".item1-img"),
-    item2Img = document.querySelector(".item2-img");
+    item2Img = document.querySelector(".item2-img"),
+    Cappuccino = document.querySelector(".Cappuccino"),
+    CappuccinoIMG = document.querySelector(".CappuccinoIMG"),
+    avocat = document.querySelector(".avocat"),
+    avocatIMG = document.querySelector(".avocat"),
+    Continental = document.querySelector(".Continental"),
+    ContinentalIMG = document.querySelector(".Continental"),
+    Jasper = document.querySelector(".Jasper"),
+    JasperIMG = document.querySelector(".Jasper"),
+    Dutch = document.querySelector(".Dutch"),
+    DutchIMG = document.querySelector(".Dutch"),
+    Fassi = document.querySelector(".Fassi"),
+    FassiIMG = document.querySelector(".Fassi");
+
 
 document.addEventListener("mousemove", (e) => {
     let x = e.offsetX,
@@ -123,6 +136,24 @@ document.addEventListener("mousemove", (e) => {
         item2Img.style.left = `${x}px`;
         item2Img.style.top = `${y}px`;
     }
+    // make sure that you make give it a display block
+    if (e.target.classList.contains("Cappuccino")) {
+        CappuccinoIMG.style.left = `${x}px`;
+        CappuccinoIMG.style.top = `${y}px`;
+    }
+    if (e.target.classList.contains("item2")) {
+        item2Img.style.left = `${x}px`;
+        item2Img.style.top = `${y}px`;
+    }
+    if (e.target.classList.contains("item2")) {
+        item2Img.style.left = `${x}px`;
+        item2Img.style.top = `${y}px`;
+    }
+    if (e.target.classList.contains("item2")) {
+        item2Img.style.left = `${x}px`;
+        item2Img.style.top = `${y}px`;
+    }
+
 });
 
 item1.addEventListener("mouseover", () => {
@@ -150,7 +181,6 @@ buttons.forEach((button) => {
     );
 });
 
-// char gpt
 // Get all the question items
 const questionItems = document.querySelectorAll('.question-item');
 
@@ -166,26 +196,6 @@ questionItems.forEach(item => {
     });
 });
 
-// menu items select 
-// const options = document.querySelectorAll('.options div');
-// const menuItems = document.querySelectorAll('.menu-items-container .item');
-// const menuText = document.querySelectorAll("menu-options")
-
-// // Add a click event listener to each option
-// function toggleMenu(menuClass) {
-//     // get all menu items
-//     const menuItems = document.querySelectorAll('.item');
-
-//     // loop through all menu items
-//     menuItems.forEach(item => {
-//         // if menu item has the menuClass, show it, otherwise hide it
-//         if (item.classList.contains(menuClass)) {
-//             item.style.display = 'block';
-//         } else {
-//             item.style.display = 'none';
-//         }
-//     });
-// }
 const options = document.querySelectorAll('.options div');
 const menuItems = document.querySelectorAll('.menu-items-container .item');
 const menuText = document.querySelectorAll("menu-options")
