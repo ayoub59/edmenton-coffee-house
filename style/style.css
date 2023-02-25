@@ -2338,6 +2338,7 @@ a {
 
 .about-row1-image {
   max-width: 50%;
+  object-fit: cover;
 }
 
 .about-row1 {
@@ -2351,6 +2352,10 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .about-p1.row1-p1 {
+    font-size: 4vw;
+  }
+
   .navlinks {
     display: none;
     grid-column-gap: 2vw;

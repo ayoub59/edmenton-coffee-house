@@ -113,15 +113,15 @@ const item1 = document.querySelector(".item1"),
     Cappuccino = document.querySelector(".Cappuccino"),
     CappuccinoIMG = document.querySelector(".CappuccinoIMG"),
     avocat = document.querySelector(".avocat"),
-    avocatIMG = document.querySelector(".avocat"),
+    avocatIMG = document.querySelector(".avocatIMG"),
     Continental = document.querySelector(".Continental"),
-    ContinentalIMG = document.querySelector(".Continental"),
+    ContinentalIMG = document.querySelector(".ContinentalIMG"),
     Jasper = document.querySelector(".Jasper"),
-    JasperIMG = document.querySelector(".Jasper"),
+    JasperIMG = document.querySelector(".JasperIMG"),
     Dutch = document.querySelector(".Dutch"),
-    DutchIMG = document.querySelector(".Dutch"),
+    DutchIMG = document.querySelector(".DutchIMG"),
     Fassi = document.querySelector(".Fassi"),
-    FassiIMG = document.querySelector(".Fassi");
+    FassiIMG = document.querySelector(".FassiIMG");
 
 
 document.addEventListener("mousemove", (e) => {
@@ -141,17 +141,25 @@ document.addEventListener("mousemove", (e) => {
         CappuccinoIMG.style.left = `${x}px`;
         CappuccinoIMG.style.top = `${y}px`;
     }
-    if (e.target.classList.contains("item2")) {
-        item2Img.style.left = `${x}px`;
-        item2Img.style.top = `${y}px`;
+    if (e.target.classList.contains("avocat")) {
+        avocatIMG.style.left = `${x}px`;
+        avocatIMG.style.top = `${y}px`;
     }
-    if (e.target.classList.contains("item2")) {
-        item2Img.style.left = `${x}px`;
-        item2Img.style.top = `${y}px`;
+    if (e.target.classList.contains("Continental")) {
+        ContinentalIMG.style.left = `${x}px`;
+        ContinentalIMG.style.top = `${y}px`;
     }
-    if (e.target.classList.contains("item2")) {
-        item2Img.style.left = `${x}px`;
-        item2Img.style.top = `${y}px`;
+    if (e.target.classList.contains("Jasper")) {
+        JasperIMG.style.left = `${x}px`;
+        JasperIMG.style.top = `${y}px`;
+    }
+    if (e.target.classList.contains("Dutch")) {
+        DutchIMG.style.left = `${x}px`;
+        DutchIMG.style.top = `${y}px`;
+    }
+    if (e.target.classList.contains("Fassi")) {
+        FassiIMG.style.left = `${x}px`;
+        FassiIMG.style.top = `${y}px`;
     }
 
 });
@@ -171,6 +179,54 @@ item2.addEventListener("mouseover", () => {
 item2.addEventListener("mouseleave", () => {
     item2Img.style.display = "";
 });
+Cappuccino.addEventListener("mouseover", () => {
+    CappuccinoIMG.style.display = "block";
+});
+
+Cappuccino.addEventListener("mouseleave", () => {
+    CappuccinoIMG.style.display = "";
+});
+
+avocat.addEventListener("mouseover", () => {
+    avocatIMG.style.display = "block";
+});
+
+avocat.addEventListener("mouseleave", () => {
+    avocatIMG.style.display = "";
+});
+
+Continental.addEventListener("mouseover", () => {
+    ContinentalIMG.style.display = "block";
+});
+
+Continental.addEventListener("mouseleave", () => {
+    ContinentalIMG.style.display = "";
+});
+
+Jasper.addEventListener("mouseover", () => {
+    JasperIMG.style.display = "block";
+});
+
+Jasper.addEventListener("mouseleave", () => {
+    JasperIMG.style.display = "";
+});
+
+Dutch.addEventListener("mouseover", () => {
+    DutchIMG.style.display = "block";
+});
+Dutch.addEventListener("mouseleave", () => {
+    DutchIMG.style.display = "";
+});
+
+Fassi.addEventListener("mouseover", () => {
+    FassiIMG.style.display = "block";
+});
+Fassi.addEventListener("mouseleave", () => {
+    FassiIMG.style.display = "";
+});
+
+
+
 
 // faq section
 const buttons = document.querySelectorAll(".faq-toggle");
