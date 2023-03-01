@@ -245,7 +245,7 @@ a {
 /* cursor animation */
 
 .cursor {
-  width: 1vw;
+  /* width: 1vw;
   height: 1vw;
   border-radius: 50%;
   background-color: #250601;
@@ -254,9 +254,10 @@ a {
   transition-timing-function: ease-out;
   animation: cursorAnim 0.5s infinite alternate;
   pointer-events: none;
-  z-index: 1000;
+  z-index: 1000; */
+  display: none;
 }
-.cursor::after {
+/* .cursor::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -266,7 +267,7 @@ a {
   top: -8px;
   left: -8px;
   animation: cursorAnim2 0.5s infinite alternate;
-}
+} */
 
 /* * {
   cursor: none;
@@ -725,9 +726,9 @@ a {
 
 ._01 {
   position: absolute;
-  left: 40px;
-  bottom: 30px;
-  max-width: 30%;
+  left: -5px;
+  bottom: -50px;
+  max-height: 40%;
   background-color: transparent;
   opacity: 1;
   -o-object-fit: cover;
