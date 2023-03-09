@@ -31,6 +31,12 @@ a:hover {
 a {
   transition: transform 0.3s ease-in-out;
 }
+/* logo animation removal */
+.logoA:hover {
+  transform: none;
+}.logoA:hover img {
+  transform: none;
+}
 /* with complicated structure */
 .link-2 {
   display: inline-flex;
