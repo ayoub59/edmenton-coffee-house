@@ -34,7 +34,8 @@ a {
 /* logo animation removal */
 .logoA:hover {
   transform: none;
-}.logoA:hover img {
+}
+.logoA:hover img {
   transform: none;
 }
 /* with complicated structure */
@@ -279,7 +280,7 @@ a {
   cursor: none;
 } */
 /* menu animation */
-.menu img {
+/* .menu img {
   position: relative;
   width: 300px;
   transform: translate(100%, -150%);
@@ -287,7 +288,22 @@ a {
   pointer-events: none;
   z-index: 10000;
   filter: grayscale(1);
+} */
+
+/* testemonials */
+.name-link {
+  display: flex;
+  gap: 1vw;
 }
+.linkSvg {
+  width: 40px;
+  object-fit: contain;
+  /* transition: none; */
+}
+.linkSvg:hover {
+  transform: scale(1.1);
+}
+
 /* faq section */
 .faq-answer {
   display: none;
@@ -2229,9 +2245,9 @@ a {
     padding: 0;
   }
   /* for the menu hover effect */
-  .menu img {
+  /* .menu img {
     transform: translate(60%, -280%);
-  }
+  } */
   .navlinks {
     display: none;
     grid-column-gap: 2vw;
