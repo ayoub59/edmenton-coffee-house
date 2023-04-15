@@ -1956,7 +1956,7 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   grid-column-gap: 53px;
   grid-row-gap: 53px;
 }

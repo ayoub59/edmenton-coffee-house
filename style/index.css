@@ -304,6 +304,11 @@ a {
   transform: scale(1.1);
 }
 
+.name-link .menu-lable {
+  /* color: green; */
+  font-size: 3vw;
+}
+
 /* faq section */
 .faq-answer {
   display: none;
