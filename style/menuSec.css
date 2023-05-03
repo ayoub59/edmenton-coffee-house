@@ -1309,6 +1309,24 @@
 }
 
 @media screen and (max-width: 767px) {
+  .header-h1-6 {
+    font-size: 13vw;
+  }
+  .header-side-header {
+    font-size: 6vw;
+  }
+  .linkSvg {
+    width: 20px !important;
+  }
+  .name-link {
+    align-items: center;
+  }
+  .name-link .menu-lable {
+    font-size: 5vw !important;
+  }
+  .testimonials-container {
+    grid-row-gap: 0px !important;
+  }
   .navlinks {
     display: none;
     grid-column-gap: 2vw;
@@ -1590,7 +1608,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     grid-column-gap: 0vw;
-    grid-row-gap: 0vw;
+    grid-row-gap: 3vw;
   }
 
   .test-p {
